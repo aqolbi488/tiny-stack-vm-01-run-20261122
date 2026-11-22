@@ -1,8 +1,5 @@
-// Tiny stack VM for make.fun's tiny-stack-vm-01-run-20261122: runs every program.bin in
-// /input/<id>/ on its input.bin and writes /output/<id>/stdout.bin + exit.txt.
-// Implements ISA v1 exactly (see kit program/generator/subject/ISA.md): 32-bit wrapping
-// arithmetic, 256-value data stack, 64-deep call stack, 256 words of memory, 1,000,000
-// step limit, 65,536 output limit, ten traps with their own exit codes.
+// Tiny stack VM for make.fun tiny-stack-vm-01-run-20261122 (ISA v1): runs every
+// program.bin in /input/<id>/ on its input.bin, writes /output/<id>/stdout.bin + exit.txt.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
